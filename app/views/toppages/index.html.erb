@@ -2,6 +2,7 @@
   <p>ログイン完了ユーザ: <%= current_user.name %></p>	
   <% if current_user.admin? %>
     <%= link_to 'さあ始めよう', new_image1_path, class: 'btn btn-lg btn-primary' %>
+    <%= javascript_pack_tag 'hello_vue' %>
   <% end %>
 <% else %>	
   <div class="center jumbotron">	

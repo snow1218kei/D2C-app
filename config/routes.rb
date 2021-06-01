@@ -1,4 +1,5 @@
 Rails.application.routes.draw do	
+  resources :products
   resources :image1s
   root to: 'toppages#index'	
 	
