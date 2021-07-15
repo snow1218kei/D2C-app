@@ -1,4 +1,5 @@
 class Product < ApplicationRecord
-   belongs_to :user
+   has_many :relationships
+   has_many :users, through: :relationships
    validates :user_id, presence: true
 end
